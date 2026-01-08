@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stroomprijs API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Stroomprijs API</h1>
+        <div class="info">
+            <p>This is a FastAPI application for electricity pricing.</p>
+            <p>Available endpoints:</p>
+            <ul>
+                <li><a href="/">/</a> - Home page</li>
+                <li><a href="/prices">/prices</a> - View electricity prices</li>
+                <li><a href="/gemiddeld">/gemiddeld</a> - View price statistics (lowest, average, highest)</li>
+                <li><a href="/kopen">/kopen</a> - Check if current hour is good for buying (HTML)</li>
+                <li><a href="/verkopen">/verkopen</a> - Check if current hour is good for selling (HTML)</li>
+                <li><a href="/api/prices">/api/prices</a> - Get prices as JSON</li>
+                <li><a href="/api/kopen">/api/kopen</a> - Get buying status as JSON</li>
+                <li><a href="/api/verkopen">/api/verkopen</a> - Get selling status as JSON</li>
+                <li><a href="/health">/health</a> - Health check</li>
+                <li><a href="/docs">/docs</a> - API Documentation</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

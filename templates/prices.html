@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stroomprijzen - Stroomprijs API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .average {
+            padding: 15px;
+            background-color: #e3f2fd;
+            border-left: 4px solid #2196F3;
+            margin: 20px 0;
+        }
+        .prices {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .price-item {
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .price-item .hour {
+            font-weight: bold;
+            color: #666;
+        }
+        .price-item .price {
+            font-size: 1.2em;
+            color: #2196F3;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Stroomprijzen Vandaag</h1>
+
+        <div class="average">
+            <strong>Gemiddelde prijs:</strong> €{average}
+        </div>
+
+        <h2>Prijzen per uur</h2>
+        <div class="prices">
+            {price_items}
+        </div>
+
+        <br>
+        <a href="/">← Terug naar home</a> |
+        <a href="/api/prices">Bekijk JSON data</a>
+    </div>
+</body>
+</html>

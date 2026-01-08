@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopen Status - Stroomprijs API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .status-card {
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .status-card.ok {
+            background-color: #d4edda;
+            border-left: 6px solid #28a745;
+        }
+        .status-card.not-ok {
+            background-color: #f8d7da;
+            border-left: 6px solid #dc3545;
+        }
+        .status-card.neutraal {
+            background-color: #fff3cd;
+            border-left: 6px solid #ffc107;
+        }
+        .status-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        .status-card.ok .status-icon {
+            color: #28a745;
+        }
+        .status-card.not-ok .status-icon {
+            color: #dc3545;
+        }
+        .status-card.neutraal .status-icon {
+            color: #ffc107;
+        }
+        .status-title {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .status-card.ok .status-title {
+            color: #28a745;
+        }
+        .status-card.not-ok .status-title {
+            color: #dc3545;
+        }
+        .status-card.neutraal .status-title {
+            color: #856404;
+        }
+        .status-message {
+            font-size: 1.2em;
+            color: #666;
+            margin: 15px 0;
+        }
+        .status-details {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+        }
+        .links {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .links a {
+            margin-right: 15px;
+            color: #2196F3;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kopen Status</h1>
+
+        <div class="status-card {status_class}">
+            <div class="status-icon">{status_icon}</div>
+            <div class="status-title">{status_title}</div>
+            <div class="status-message">{message}</div>
+            <div class="status-details">
+                <strong>Huidige tijd:</strong> {current_time}<br>
+                <strong>Huidig uur:</strong> {current_hour}:00
+            </div>
+        </div>
+
+        <div class="links">
+            <a href="/">← Terug naar home</a> |
+            <a href="/gemiddeld">Bekijk statistieken</a> |
+            <a href="/verkopen">Verkopen status</a>
+        </div>
+    </div>
+</body>
+</html>
