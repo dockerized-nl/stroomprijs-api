@@ -1,8 +1,8 @@
 # Stroomprijs: Route-Preserving Consumer Platform Design
 
-**Date:** 2026-08-24  
-**Task:** STROOM-REDESIGN-001  
-**Status:** Approved design direction; specification pending customer review  
+**Date:** 2026-08-24
+**Task:** STROOM-REDESIGN-001
+**Status:** Approved design direction; specification pending customer review
 **Baseline:** `main` at `31b537f04fb7c0f89c1c8d940c538bab8788ba80`
 
 ## 1. Purpose
